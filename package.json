@@ -1,0 +1,27 @@
+{
+  "name": "appmite-browserdb",
+  "version": "0.0.1",
+  "description": "Simple module that supports use of indexeddb in a manner similar to mongodb including the ability to do incremental upgrades.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/appmite/appmite-browserdb.git"
+  },
+  "keywords": [
+    "indexeddb",
+    "mongodb",
+    "mobile",
+    "appmite",
+    "cordova",
+    "phonegap"
+  ],
+  "author": "appmite <admin@appmite.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appmite/appmite-browserdb/issues"
+  },
+  "homepage": "https://github.com/appmite/appmite-browserdb"
+}
