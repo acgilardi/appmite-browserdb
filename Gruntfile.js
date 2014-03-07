@@ -11,6 +11,13 @@ module.exports = function (grunt) {
             all: ['build']
         },
 
+        copy: {
+            vendor: {
+                src: 'bower_components/underscore/underscore.js',
+                dest: 'src/underscore.js'
+            }
+        },
+
         browserify: {
             app: {
                 files: {
@@ -23,11 +30,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-//        concat: {
-//            'build/package.js':
-//                ['src/**/*.js', 'spec/**/*.js']
-//        },
 
         watch: {
             files: [
@@ -59,7 +61,7 @@ module.exports = function (grunt) {
 
 
     // Custom tasks
-    grunt.registerTask('build', ['clean:all', 'browserify' ]);
+    grunt.registerTask('build', ['clean:all', 'copy:vendor', 'browserify' ]);
     grunt.registerTask('test', ['karma:unit']);
 
     // Default task
